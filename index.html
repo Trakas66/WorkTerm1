@@ -8,92 +8,105 @@
       <style>
         /* Body styling with a subtle gradient background */
         body {
-          background: linear-gradient(135deg, #f0f4f7 25%, #e1ecf2 100%);
-          color: #212529;
-          padding: 10px;
-          margin: 0;
+        background: linear-gradient(135deg, #f0f4f7 25%, #e1ecf2 100%);
+        color: #212529;
+        padding: 0;
+        margin: 0;
         }
 
         /* Main container */
         .container-fluid {
-          max-width: 1200px; /* Limit the maximum width for better balance */
-          margin: 0 auto; /* Center the container */
+        max-width: 1200px; /* Limit the maximum width for better balance */
+        margin: 0 auto; /* Center the container */
         }
 
         /* Main content area */
         .content {
-          padding: 15px;
+        padding: 15px;
         }
 
         /* Card styling */
         .card {
-          margin-bottom: 15px;
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-          border-left: 4px solid #28a745;
-          background-color: #ffffff;
-          padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+        border-left: 4px solid #28a745;
+        background-color: #ffffff;
+        padding: 20px;
         }
 
         /* Typography */
         h3, h4, h5 {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          font-weight: 600;
-          color: #28a745;
-          margin-top: 20px;
-          margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        color: #28a745;
+        margin-top: 20px;
+        margin-bottom: 10px;
         }
 
         p, li {
-          line-height: 1.5;
-          font-size: 1rem;
-          margin-bottom: 10px;
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 10px;
         }
 
         /* Sidebar (sticky Table of Contents)*/
         .sticky-top {
-          position: sticky;
-          top: 10px;
-          background-color: white;
-          /*padding: 10px;*/
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-          border-left: 4px solid #28a745;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 10px;
+        background-color: white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+        border-left: 4px solid #28a745;
+        z-index: 1; /* Ensures it stays on top of other content */
+        }
+
+        /* Responsive behavior for sticky sidebar */
+        @media (max-width: 767.98px) {
+        .col-md-3 {
+          display: none; /* Hide the sidebar on small screens */
+        }
+
+        .col-md-9 {
+          flex: 0 0 100%; /* Make the content column take full width */
+          max-width: 100%;
+        }
         }
 
         ol {
-          padding-left: 0;
-          list-style-position: inside;
+        padding-left: 0;
+        list-style-position: inside;
         }
 
         ol li a {
-          color: #28a745;
-          text-decoration: none;
+        color: #28a745;
+        text-decoration: none;
         }
 
         ol li a:hover {
-          text-decoration: underline;
-          color: #218838;
+        text-decoration: underline;
+        color: #218838;
         }
 
         /* TOC header */
         .text-center h3 {
-          color: #218838;
-          margin-bottom: 15px;
+        color: #218838;
+        margin-bottom: 15px;
         }
 
         /* Adjust column widths */
         .col-md-3 {
-          flex: 0 0 20%; /* Narrow the sidebar column */
-          max-width: 20%;
+        flex: 0 0 20%; /* Narrow the sidebar column */
+        max-width: 20%;
         }
 
         .col-md-9 {
-          flex: 0 0 80%; /* Widen the content column */
-          max-width: 80%;
+        flex: 0 0 80%; /* Widen the content column */
+        max-width: 80%;
         }
 
         /* Remove empty column */
         .col-md-3-empty {
-          display: none;
+        display: none;
         }
       </style>
     <title>Manulife Work Report</title>
