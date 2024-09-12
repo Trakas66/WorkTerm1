@@ -1,23 +1,206 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" lang="en">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <script src="bootstrap/js/bootstrap-responsive.min.js">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+      <style>
+        /* Body styling with a subtle gradient background */
+        body {
+          background: linear-gradient(135deg, #f0f4f7 25%, #e1ecf2 100%);
+          color: #212529;
+          padding: 10px;
+          margin: 0;
+        }
 
-    </script>
-    <title></title>
+        /* Main container */
+        .container-fluid {
+          max-width: 1200px; /* Limit the maximum width for better balance */
+          margin: 0 auto; /* Center the container */
+        }
+
+        /* Main content area */
+        .content {
+          padding: 15px;
+        }
+
+        /* Card styling */
+        .card {
+          margin-bottom: 15px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+          border-left: 4px solid #28a745;
+          background-color: #ffffff;
+          padding: 20px;
+        }
+
+        /* Typography */
+        h3, h4, h5 {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 600;
+          color: #28a745;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+
+        p, li {
+          line-height: 1.5;
+          font-size: 1rem;
+          margin-bottom: 10px;
+        }
+
+        /* Sidebar (sticky Table of Contents) */
+        .sticky-top {
+          position: sticky;
+          top: 10px;
+          background-color: white;
+          padding: 10px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+          border-left: 4px solid #28a745;
+        }
+
+        ol {
+          padding-left: 0;
+          list-style-position: inside;
+        }
+
+        ol li a {
+          color: #28a745;
+          text-decoration: none;
+        }
+
+        ol li a:hover {
+          text-decoration: underline;
+          color: #218838;
+        }
+
+        /* TOC header */
+        .text-center h3 {
+          color: #218838;
+          margin-bottom: 15px;
+        }
+
+        /* Adjust column widths */
+        .col-md-3 {
+          flex: 0 0 20%; /* Narrow the sidebar column */
+          max-width: 20%;
+        }
+
+        .col-md-9 {
+          flex: 0 0 80%; /* Widen the content column */
+          max-width: 80%;
+        }
+
+        /* Remove empty column */
+        .col-md-3-empty {
+          display: none;
+        }
+      </style>
+    <title>Manulife Work Report</title>
   </head>
   <body>
-    <div class="content">
-      <div class="row-fluid">
-        <div class="span3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sticky-top">
+            <div class="text-center">
+              <h3>Table of Contents</h3>
+              <ol class="list-unstyled">
+                <li><a href="#Introduction">Introduction</a></li>
+                <li><a href="#Manulife">Manulife</a></li>
+                <li><a href="#Goals">Goals</a></li>
+                <li><a href="#JobDescription">Job Description</a></li>
+                <li><a href="#Conclusions">Conclusions</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
 
+        <div class="col-md-6">
+          <div class="content">
+            <div class="card p-4">
+              <h3 id="Introduction">Introduction</h3>
+              <p>&emsp;In this report, I aim to provide insights into my first co-op experience as a Salesforce software developer intern at Manulife.
+                I hope readers will gain an understanding of the practical skills I developed, the challenges I faced, and the contributions
+                I made to real-world projects. By sharing my journey, I hope to highlight the value of hands-on learning in shaping a strong
+                foundation for a career in software development.</p>
+            </div>
+
+            <div class="card p-4">
+              <h3 id="Manulife">Manulife</h3>
+              <p>&emsp;Manulife Financial Corporation is a leading global financial services provider headquartered in Toronto, Canada.
+                The company offers a broad range of financial products and services, including insurance, wealth management, and asset management.
+                As a global organization, Manulife operates in Canada, the United States (as John Hancock), and several Asian countries.</p>
+              <p>&emsp;The area of computing science related to Manulife is heavily focused on financial technology (FinTech). Within this domain,
+                the company leverages software development, cloud computing, data analytics, and customer relationship management (CRM) systems,
+                such as Salesforce, to enhance its digital services and improve customer experiences.</p>
+            </div>
+
+            <div class="card p-4">
+              <h3 id="Goals">Goals</h3>
+              <p>&emsp;During my work term at Manulife as a Salesforce software developer intern, I set several goals aimed at enhancing my technical skills,
+                problem-solving abilities, and communication. These goals were directly related to my job tasks and focused on making the most of my learning
+                experience in a professional environment.
+              <h5>Goals Related to Job Tasks:</h5>
+                &emsp;My primary goal was to make a significant contribution to the Salesforce division at Manulife by focusing on flow development and migration.
+                I planned to automate various business processes through the creation of multiple flows. I also sought to
+                improve my problem-solving skills by implementing complex business logic using Salesforce tools, particularly flows and Apex. Additionally,
+                I aimed to enhance my oral communication skills, ensuring I could articulate my ideas clearly in sprint meetings.
+                <br><br>
+                <h5>Skills I Wanted to Learn:</h5> &emsp;One of my key learning objectives was to gain a comprehensive understanding of Salesforce and its various
+                functionalities. To achieve this, I intended to complete as many Trailhead training modules as possible and obtain Salesforce certifications,
+                including Administrator and Platform Developer 1. I also wanted to dive deeper into Apex, Salesforce's programming language, and learn how to
+                create custom flow components.
+                <br><br>
+                &emsp;These tasks were important for building a solid foundation in Salesforce development, which will benefit my next work experience by giving
+                me practical experience with widely used tools in the industry. Mastering these technologies would not only enhance my technical capabilities
+                but also provide me with certifications that demonstrate my proficiency.
+                <br><br>
+                <h5>Technologies I Wanted to Work With:</h5> &emsp;I was particularly interested in working with Salesforce Flows and Apex. Flows appealed to me
+                because it allows developers to automate business processes visually, which I found to be a powerful way to simplify complex workflows.
+                Apex was another focus area, as it enables more advanced customizations and integration with Salesforce. I chose these technologies because
+                they are crucial to building and scaling Salesforce applications, and mastering them would give me an edge in my future career as a developer.
+                <br><br>
+                <h4>Reflections on Goals</h4>
+                <h5>Completed Goals:</h5>
+                <ol>
+                  <li>Improving Problem-Solving Skills: I successfully achieved this goal by working on process automation and implementing complex flows.
+                    Through this experience, I developed my ability to handle tricky business logic and gained confidence in using Salesforce tools.</li>
+                  <li>Enhancing Communication Skills: By regularly participating in sprint planning and stand-up meetings, I became more comfortable
+                    articulating my ideas. I was able to communicate my progress and next steps clearly, with minimal follow-up questions from the team.</li>
+                </ol>
+                <h5>Unsuccessful Goals:</h5>
+                <ol>
+                  <li>Contributing to the Salesforce Division: My goal of achieving 5-10 sprint points in the first two sprints was not accomplished. In retrospect,
+                    this was not an ideal goal since sprint points are assigned based on task complexity and team priorities, which were out of my control.</li>
+                  <li>Obtaining Certifications: While I did manage to obtain the Administrator and Platform App Builder certifications by July 26, I was unable
+                    to achieve the Platform Developer 1 certification within the timeframe. The certification required more preparation than I anticipated, and
+                    I shifted my focus to other relevant skills for my role.</li>
+                  <li>Learning to Create Flow Elements with Apex: I did not achieve this goal, as I became more focused on learning skills directly related to
+                    my work tasks. Custom flow components were not immediately required, so I prioritized other learning areas.</li>
+                </ol>
+                &emsp;Overall, I made significant progress in several areas, despite not meeting all of my initial goals. The experience allowed me to gain
+                practical knowledge in Salesforce development while enhancing both my technical and soft skills.
+              </p>
+            </div>
+
+            <div class="card p-4">
+              <h3 id="JobDescription">Job Description</h3>
+              <p>&emsp;As a Salesforce developer for the Service team at Manulife, my role focused on building and enhancing applications used by customer
+                service agents and other client-facing roles. The most interesting and unique aspects of my job were process automation and app development,
+                where I helped streamline business processes and improve user efficiency.</p>
+            </div>
+
+            <div class="card p-4">
+              <h3 id="Conclusions">Conclusions</h3>
+              <p>&emsp;In conclusion, this report highlights my first co-op experience as a Salesforce software developer intern at Manulife.
+                Throughout the term, I gained valuable insights into Salesforce development, including process automation and application building,
+                while honing my problem-solving and communication skills.</p>
+            </div>
+          </div>
         </div>
-        <div class="span9">
-          <h1>Introduction</h1>
-        </div>
+
+        <div class="col-md-3"></div>
       </div>
     </div>
   </body>
